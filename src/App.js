@@ -5,14 +5,12 @@ function App() {
   const [text, setText] = useState("Provide your Contact details");
   const [count, setCount] = useState(1);
   const [activeNumber, setActiveNumber] = useState(null);
-  const[currentNumber, setCurrentNumber] =useState(1);
+
 
 
   const next = () => {
     setCount(count + 1);
     setActiveNumber(count);
-
-setCurrentNumber(currentNumber+1);
 
     if (count === 1) setText("Enter your Shipping Address");
     else if (count === 2) setText("Complete Payment for your Product");
